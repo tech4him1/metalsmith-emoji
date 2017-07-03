@@ -11,6 +11,14 @@
 
   This plugin will only process emoji in markdown and HTML files by default. This can be changed through the `pattern` option below, which takes an array of `minimatch` patterns.
 
+### Default Options
+
+```js
+{
+    pattern: ["**/*.md", "**/*.markdown", "**/*.html", "**/*.htm"]
+}
+```
+
 ## Example
 
 ```js
