@@ -13,12 +13,15 @@
 
   If you want the emoji to be images (PNG) instead of Unicode characters, set `convertToImages` to `true`.
 
+  If you don't want the plugin to convert shortnames (like :smile:) to actual emoji, set `processShortnames` to `false`.
+
 ### Default Options
 
 ```js
 {
     pattern: ["**/*.md", "**/*.markdown", "**/*.html", "**/*.htm"],
-    convertToImages: false
+    convertToImages: false,
+    processShortnames: true
 }
 ```
 
@@ -29,6 +32,7 @@ var emoji = require('metalsmith-emoji');
 
 metalsmith.use(emoji({
   pattern: ["**/*.md", "**/*.markdown", "**/*.html", "data/*"],
-  convertToImages: true
+  convertToImages: true,
+  processShortnames: true
 }));
 ```
