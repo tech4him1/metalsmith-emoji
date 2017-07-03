@@ -1,19 +1,16 @@
-var debug = require('debug')('metalsmith-emoji');
-var emojione = require('emojione');
-var multimatch = require('multimatch');
-var path = require('path');
+const debug = require('debug')('metalsmith-emoji');
+const emojione = require('emojione');
+const multimatch = require('multimatch');
+const path = require('path');
 
 // Export plugin code.
 module.exports = plugin;
 
-function plugin(opts) {
-    opts = opts || {};
-    opts.pattern = opts.pattern || ["*.md", "*.markdown", "*.html", "*.htm"];
-
-    return function (files, metalsmith, done){
+function plugin({pattern = ["*.md", "*.markdown", "*.html", "*.htm"]} = {}) {
+    return function(files, metalsmith, done) {
         setImmediate(done);
         Object.keys(files).forEach(function(file){
-            if (!isFileType(file, opts.pattern)) return;
+            if (!isFileType(file, pattern)) return;
 
             debug('processing file: %s', file);
             var output = emojione.shortnameToUnicode(files[file].contents.toString());
