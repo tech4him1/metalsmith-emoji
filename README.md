@@ -1,6 +1,6 @@
 # metalsmith-emoji
 
-  A Metalsmith plugin to convert emoji, using the EmojiOne list.
+  A Metalsmith plugin to convert emoji shortnames to emoji, using the EmojiOne list.
 
 ## Installation
 
