@@ -1,0 +1,15 @@
+{
+  "name": "metalsmith-emoji",
+  "version": "0.0.1",
+  "description": "A Metalsmith plugin to convert emoji shortnames to Unicode emoji.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tech4him",
+  "license": "MIT",
+  "dependencies": {
+    "emojione": "^3.1.0",
+    "multimatch": "^2.1.0"
+  }
+}
