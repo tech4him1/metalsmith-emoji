@@ -1,4 +1,5 @@
 # metalsmith-emoji
+[![GitHub issues](https://img.shields.io/github/issues/tech4him1/metalsmith-emoji.svg)](https://github.com/tech4him1/metalsmith-emoji/issues) [![license](https://img.shields.io/github/license/tech4him1/metalsmith-emoji.svg)](https://github.com/tech4him1/metalsmith-emoji/blob/master/LICENSE)
 
   A Metalsmith plugin to convert emoji shortnames to emoji, using the EmojiOne list.
 
