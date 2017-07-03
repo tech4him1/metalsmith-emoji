@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-emoji",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A Metalsmith plugin to convert emoji shortnames to emoji, using the EmojiOne list.",
   "main": "index.js",
   "author": "tech4him",
