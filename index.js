@@ -7,10 +7,9 @@ module.exports = plugin;
 
 function plugin({pattern = ["**/*.md", "**/*.markdown", "**/*.html", "**/*.htm"], convertToImages = false, processShortnames = true} = {}) {
     return function(files) {
-        Object.keys(files).forEach(function(file){
-            // Make sure this file is the correct type (from `pattern`).
-            if (!multimatch(file, pattern).length) return;
-
+        Object.keys(files)
+        .filter(file => !!multimatch(file, pattern).length)
+        .forEach(file => {
             debug('processing file: %s', file);
             let data = files[file].contents.toString();
             switch (true) {
