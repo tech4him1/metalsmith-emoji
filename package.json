@@ -2,7 +2,7 @@
   "name": "metalsmith-emoji",
   "version": "0.1.0",
   "description": "A Metalsmith plugin to convert emoji shortnames to emoji, using the EmojiOne list.",
-  "main": "index.js",
+  "main": "src/index.js",
   "author": "tech4him",
   "license": "MIT",
   "dependencies": {
@@ -12,5 +12,14 @@
   "engines": {
     "node" : ">=6.0.0"
   },
-  "repository": "tech4him1/metalsmith-emoji"
+  "repository": "tech4him1/metalsmith-emoji",
+  "scripts": {
+    "test": "node test/index.js | faucet"
+  },
+  "devDependencies": {
+    "debug": "^2.6.8",
+    "faucet": "0.0.1",
+    "metalsmith": "^2.3.0",
+    "tape": "^4.7.0"
+  }
 }
