@@ -9,14 +9,14 @@
 
 ## Usage
 
-  This plugin will only process emoji in markdown files by default. This can be changed through the `pattern` option below, which takes an array of `minimatch` patterns.
+  This plugin will only process emoji in markdown and HTML files by default. This can be changed through the `pattern` option below, which takes an array of `minimatch` patterns.
 
 ## Example
 
 ```js
-var markdown = require('metalsmith-emoji');
+var emoji = require('metalsmith-emoji');
 
-metalsmith.use(markdown({
-  pattern: ["*.md", "*.markdown", "*.html", "data/*"]
+metalsmith.use(emoji({
+  pattern: ["**/*.md", "**/*.markdown", "**/*.html", "data/*"]
 }));
 ```

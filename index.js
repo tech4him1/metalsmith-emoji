@@ -6,7 +6,7 @@ const path = require('path');
 // Export plugin code.
 module.exports = plugin;
 
-function plugin({pattern = ["*.md", "*.markdown", "*.html", "*.htm"]} = {}) {
+function plugin({pattern = ["**/*.md", "**/*.markdown", "**/*.html", "**/*.htm"]} = {}) {
     return function(files, metalsmith, done) {
         setImmediate(done);
         Object.keys(files).forEach(function(file){
@@ -21,6 +21,5 @@ function plugin({pattern = ["*.md", "*.markdown", "*.html", "*.htm"]} = {}) {
 }
 
 function isFileType(filepath, patterns) {
-    var filename = path.basename(filepath);
-    return !!multimatch(filename, patterns).length;
+    return !!multimatch(filepath, patterns).length;
 }
