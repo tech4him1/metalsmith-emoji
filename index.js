@@ -1,7 +1,6 @@
 const debug = require('debug')('metalsmith-emoji');
 const emojione = require('emojione');
 const multimatch = require('multimatch');
-const path = require('path');
 
 // Export plugin code.
 module.exports = plugin;
