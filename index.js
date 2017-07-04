@@ -11,7 +11,7 @@ function plugin({pattern = ["**/*.md", "**/*.markdown", "**/*.html", "**/*.htm"]
         setImmediate(done);
         Object.keys(files).forEach(function(file){
             // Make sure this file is the correct type (from `pattern`).
-            if (!isFileType(file, pattern)) return;
+            if (!multimatch(filepath, patterns).length) return;
 
             debug('processing file: %s', file);
             let data = files[file].contents.toString();
@@ -36,8 +36,4 @@ function plugin({pattern = ["**/*.md", "**/*.markdown", "**/*.html", "**/*.htm"]
             files[file].contents = new Buffer(data);
         });
     };
-}
-
-function isFileType(filepath, patterns) {
-    return !!multimatch(filepath, patterns).length;
 }
