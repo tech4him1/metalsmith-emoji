@@ -9,7 +9,7 @@ function plugin({pattern = ["**/*.md", "**/*.markdown", "**/*.html", "**/*.htm"]
     return function(files) {
         Object.keys(files).forEach(function(file){
             // Make sure this file is the correct type (from `pattern`).
-            if (!multimatch(filepath, patterns).length) return;
+            if (!multimatch(file, pattern).length) return;
 
             debug('processing file: %s', file);
             let data = files[file].contents.toString();
