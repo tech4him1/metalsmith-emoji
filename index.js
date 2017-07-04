@@ -7,8 +7,7 @@ const path = require('path');
 module.exports = plugin;
 
 function plugin({pattern = ["**/*.md", "**/*.markdown", "**/*.html", "**/*.htm"], convertToImages = false, processShortnames = true} = {}) {
-    return function(files, metalsmith, done) {
-        setImmediate(done);
+    return function(files) {
         Object.keys(files).forEach(function(file){
             // Make sure this file is the correct type (from `pattern`).
             if (!multimatch(filepath, patterns).length) return;
