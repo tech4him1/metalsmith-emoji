@@ -1,5 +1,5 @@
 # metalsmith-emoji
-[![GitHub issues](https://img.shields.io/github/issues/tech4him1/metalsmith-emoji.svg)](https://github.com/tech4him1/metalsmith-emoji/issues) [![license](https://img.shields.io/github/license/tech4him1/metalsmith-emoji.svg)](https://github.com/tech4him1/metalsmith-emoji/blob/master/LICENSE) ![node](https://img.shields.io/node/v/metalsmith-emoji.svg)
+[![GitHub issues](https://img.shields.io/github/issues/tech4him1/metalsmith-emoji.svg)](https://github.com/tech4him1/metalsmith-emoji/issues) [![license](https://img.shields.io/github/license/tech4him1/metalsmith-emoji.svg)](https://github.com/tech4him1/metalsmith-emoji/blob/master/LICENSE) ![node](https://img.shields.io/node/v/metalsmith-emoji.svg) [![Greenkeeper badge](https://badges.greenkeeper.io/tech4him1/metalsmith-emoji.svg)](https://greenkeeper.io/)
 
   A Metalsmith plugin to process emoji and convert emoji shortnames, using the EmojiOne list.
 
