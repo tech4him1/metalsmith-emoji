@@ -22,6 +22,7 @@ function plugin({pattern = ["**/*.md", "**/*.markdown", "**/*.html", "**/*.htm"]
                     data = emojione.toImage(data);
                     break;
                 case convertToImages && !processShortnames:
+                    console.warn('metalsmith-emoji: `processShortnames` is deprecated. In the next version shortnames will always be processed.');
                     // Convert Unicode emojis (but not shortnames) to EmojiOne images.
                     data = emojione.unicodeToImage(data);
                     break;
