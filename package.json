@@ -7,7 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "emojione": "^4.0.0",
-    "multimatch": "^2.1.0"
+    "multimatch": "^3.0.0"
   },
   "engines": {
     "node" : ">=6.0.0"
