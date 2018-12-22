@@ -17,7 +17,7 @@
     "test": "node test/index.js | faucet"
   },
   "devDependencies": {
-    "debug": "3.1.0",
+    "debug": "3.2.6",
     "faucet": "0.0.1",
     "metalsmith": "2.3.0",
     "tape": "4.9.1"
